@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Dragonforge Controller v4.4.8"
+config/description="A Controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse."
+config/version="4.4.8"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="uid://chuxl7r1v2dfg"
+
+[autoload]
+
+Gamepad="*res://addons/dragonforge_controller/gamepad.tscn"
+Mouse="*res://addons/dragonforge_controller/mouse.tscn"
+Keyboard="*res://addons/dragonforge_controller/keyboard.tscn"
+Controller="*res://addons/dragonforge_controller/controller.tscn"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dragonforge_controller/plugin.cfg")
