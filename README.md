@@ -1,9 +1,9 @@
 # Dragonforge Controller
-A Controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
+A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
 # Version 4.4.8
 For use with **Godot 4.4.stable** and later.
 # Installation Instructions
-1. Copy the **dragonforge-controller** folder from the **addons** folder into your project's **addons** folder.
+1. Copy the **dragonforge_controller** folder from the **addons** folder into your project's **addons** folder.
 2. Ignore the following errors (they are appearing because the component is not yet enabled):
   * ERROR: res://addons/dragonforge_controller/controller.gd:54 - Parse Error: Identifier "Keyboard" not declared in the current scope.
   * ERROR: res://addons/dragonforge_controller/controller.gd:56 - Parse Error: Identifier "Mouse" not declared in the current scope.
