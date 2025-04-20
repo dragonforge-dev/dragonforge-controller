@@ -14,20 +14,23 @@ enum LastInput {
 }
 
 
+## Stores the amount of movement in the x/y direction that the player is trying
+## to look in a 3D game.
+var look := Vector2.ZERO
 ## Stores the last input used by the player for UI interaction hint updates.
 ## Private so that it cannot be modified extrenally. This is a read-only value
 ## outside this singleton. (Or would be if GDScript enforced that.)
 var _last_input_type := LastInput.KEYBOARD_AND_MOUSE
 ## For saving and loading the input map.
-var action_list: ActionList
+var _action_list: ActionList
 
 
 ## Loads any custom keybindings from disk and applies them to the InputMap.
 func _ready() -> void:
-	action_list = ActionList.load_or_create()
-	for action_name in action_list.action_events:
-		for event_name in action_list.action_events[action_name]:
-			_set_binding(action_name, action_list.action_events[action_name][event_name])
+	_action_list = ActionList.load_or_create()
+	for action_name in _action_list.action_events:
+		for event_name in _action_list.action_events[action_name]:
+			_set_binding(action_name, _action_list.action_events[action_name][event_name])
 	restore_default_keybindings.connect(_on_restore_default_keybindings)
 
 
@@ -87,11 +90,11 @@ func _set_binding(action_to_remap: String, event: InputEvent) -> void:
 ## Saves on disk the passed event for the passed action.
 func _save_binding(action_name: String, event: InputEvent) -> void:
 	var action: Dictionary
-	if action_list.action_events.has(action_name):
-		action = action_list.action_events[action_name]
+	if _action_list.action_events.has(action_name):
+		action = _action_list.action_events[action_name]
 	action[event_to_string(event)] = event
-	action_list.action_events[action_name] = action
-	action_list.save()
+	_action_list.action_events[action_name] = action
+	_action_list.save()
 
 
 ## Returns a string representation of the passed InputEvent. Returns a string
@@ -116,6 +119,6 @@ func event_to_string(event: InputEvent) -> String:
 ## to a default of empty, and then reloads all the settings the developer
 ## set in the inital game.
 func _on_restore_default_keybindings() -> void:
-	action_list.delete()
-	action_list = ActionList.load_or_create()
+	_action_list.delete()
+	_action_list = ActionList.load_or_create()
 	InputMap.load_from_project_settings()

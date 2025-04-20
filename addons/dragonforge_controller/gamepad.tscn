@@ -1,13 +1,6 @@
-[gd_scene load_steps=86 format=3 uid="uid://dfg3pf4o4rnp"]
+[gd_scene load_steps=79 format=3 uid="uid://dfg3pf4o4rnp"]
 
 [ext_resource type="Script" uid="uid://5mq258ryefhj" path="res://addons/dragonforge_controller/gamepad.gd" id="1_iq7rn"]
-[ext_resource type="Texture2D" uid="uid://d0uftybjj7wbe" path="res://addons/dragonforge_controller/assets/mouse_buttons/mouse_left.svg" id="2_ji2ls"]
-[ext_resource type="Texture2D" uid="uid://bkyejvrbwrng1" path="res://addons/dragonforge_controller/assets/mouse_buttons/mouse_right.svg" id="3_ptu7l"]
-[ext_resource type="Texture2D" uid="uid://bmfrh702gip8q" path="res://addons/dragonforge_controller/assets/mouse_buttons/mouse_scroll.svg" id="4_rcqc5"]
-[ext_resource type="Texture2D" uid="uid://bb424bve31pkr" path="res://addons/dragonforge_controller/assets/mouse_buttons/mouse_scroll_up.svg" id="5_p7mb5"]
-[ext_resource type="Texture2D" uid="uid://cq2dfs0jqk03l" path="res://addons/dragonforge_controller/assets/mouse_buttons/mouse_scroll_down.svg" id="6_3hac0"]
-[ext_resource type="Texture2D" uid="uid://ct8f7v5s6jams" path="res://addons/dragonforge_controller/assets/mouse_buttons/xbox_button_back_icon.svg" id="7_dk8pj"]
-[ext_resource type="Texture2D" uid="uid://dfmfa0cx7nhhg" path="res://addons/dragonforge_controller/assets/mouse_buttons/xbox_button_start_icon.svg" id="8_ysdnd"]
 [ext_resource type="Texture2D" uid="uid://blt66mgw62kf6" path="res://addons/dragonforge_controller/assets/controller_buttons/xbox/xbox_button_color_a.svg" id="9_1fynb"]
 [ext_resource type="Texture2D" uid="uid://pk6u7je37xyu" path="res://addons/dragonforge_controller/assets/controller_buttons/xbox/xbox_button_color_b.svg" id="10_gf5c5"]
 [ext_resource type="Texture2D" uid="uid://b5rk3cib6c7ql" path="res://addons/dragonforge_controller/assets/controller_buttons/xbox/xbox_button_color_x.svg" id="11_mqey2"]
@@ -88,7 +81,6 @@
 
 [node name="Gamepad" type="Node"]
 script = ExtResource("1_iq7rn")
-mouse_button_images = Array[Texture2D]([null, ExtResource("2_ji2ls"), ExtResource("3_ptu7l"), ExtResource("4_rcqc5"), ExtResource("5_p7mb5"), ExtResource("6_3hac0"), ExtResource("4_rcqc5"), ExtResource("4_rcqc5"), ExtResource("7_dk8pj"), ExtResource("8_ysdnd")])
 xbox_button_images = Array[Texture2D]([ExtResource("9_1fynb"), ExtResource("10_gf5c5"), ExtResource("11_mqey2"), ExtResource("12_l33g6"), ExtResource("13_tgtxa"), ExtResource("14_nxyiu"), ExtResource("15_rlhc6"), ExtResource("16_t8llf"), ExtResource("17_0lusj"), ExtResource("18_nvhx6"), ExtResource("19_ujxcs"), ExtResource("20_vwht2"), ExtResource("21_rxl3t"), ExtResource("22_kwkng"), ExtResource("23_c7inf"), ExtResource("24_1gehx")])
 playstation_button_images = Array[Texture2D]([ExtResource("25_6dbef"), ExtResource("26_mkcw7"), ExtResource("27_6dea4"), ExtResource("28_h2rj0"), ExtResource("29_lqj4b"), null, ExtResource("30_ibbrp"), ExtResource("31_6j1ts"), ExtResource("32_j2sul"), ExtResource("33_mn7tq"), ExtResource("34_4g2dk"), ExtResource("35_xxjyb"), ExtResource("36_5vhmi"), ExtResource("37_8j4ib"), ExtResource("38_4b5e3"), ExtResource("39_x8s3m")])
 nintendo_button_images = Array[Texture2D]([ExtResource("40_2nbsf"), ExtResource("41_osjc7"), ExtResource("42_iao5w"), ExtResource("43_2o7jc"), ExtResource("44_7kbay"), ExtResource("45_ge8mh"), ExtResource("46_vkch6"), ExtResource("47_7jqg8"), ExtResource("48_gjika"), ExtResource("49_kuxhq"), ExtResource("50_4tids"), ExtResource("51_t37rl"), ExtResource("52_dkd2f"), ExtResource("53_u8bar"), ExtResource("54_82pag"), ExtResource("55_54vjk")])
