@@ -90,7 +90,3 @@ nintendo_positive_joystick_images = Array[Texture2D]([ExtResource("68_4ifge"), E
 xbox_negative_joystick_images = Array[Texture2D]([ExtResource("74_jdpdb"), ExtResource("75_erser"), ExtResource("76_lp6ot"), ExtResource("77_0ap7h")])
 playstation_negative_joystick_images = Array[Texture2D]([ExtResource("78_lf8h2"), ExtResource("79_slgqs"), ExtResource("80_uptjd"), ExtResource("81_hij2l")])
 nintendo_negative_joystick_images = Array[Texture2D]([ExtResource("82_23bfc"), ExtResource("83_yegre"), ExtResource("84_74nxq"), ExtResource("85_rqjw2")])
-
-[node name="Cooldown Timer" type="Timer" parent="."]
-wait_time = 0.2
-one_shot = true

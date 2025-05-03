@@ -96,7 +96,6 @@ enum Type {
 @export var nintendo_negative_joystick_images: Array[Texture2D]
 
 
-@onready var cooldown_timer: Timer = $"Cooldown Timer"
 @onready var button_images: Dictionary = {
 	Type.XBox: xbox_button_images,
 	Type.Playstation: playstation_button_images,
