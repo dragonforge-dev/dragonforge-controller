@@ -1,7 +1,6 @@
 @tool
 extends EditorPlugin
 
-
 const AUTOLOAD_GAMEPAD = "Gamepad"
 const AUTOLOAD_MOUSE = "Mouse"
 const AUTOLOAD_KEYBOARD = "Keyboard"
