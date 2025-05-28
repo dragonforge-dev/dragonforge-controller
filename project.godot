@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Dragonforge Controller v010"
+config/name="Dragonforge Controller v0.10"
 config/description="A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse."
 config/version="0.10"
 config/features=PackedStringArray("4.4", "Forward Plus")
