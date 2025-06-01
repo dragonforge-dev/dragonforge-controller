@@ -1,6 +1,6 @@
 # Dragonforge Controller
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
-# Version 0.11
+# Version 0.10.1
 For use with **Godot 4.4.1-stable** and later.
 # Installation Instructions
 1. Copy the **dragonforge_controller** folder from the **addons** folder into your project's **addons** folder.

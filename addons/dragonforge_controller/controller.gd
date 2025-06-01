@@ -16,7 +16,6 @@ enum LastInput {
 	GAMEPAD
 }
 
-
 ## Stores the amount of movement in the x/y direction that the player is trying
 ## to look in a 3D game.
 var look := Vector2.ZERO
