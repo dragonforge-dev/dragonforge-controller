@@ -1,11 +1,14 @@
 extends Node
 
 
-## Signals that there is a request to load the default keybindings shipped
+## Signal that there is a request to load the default keybindings shipped
 ## with the game. (I.E. what was set in the Godot Editor.)
 signal restore_default_keybindings
 signal show_control_hint(action: String, text: String)
-
+## Allows anything listening (like UI) to know when the input method being
+## used changed for something new. Primarily for changing what interaction
+## hints and control icons are shown on screen.
+signal input_method_changed(last_input_type: LastInput)
 
 ## Enumerates the kinds of inputs that are possible.
 enum LastInput {
@@ -37,8 +40,12 @@ func _ready() -> void:
 ## Updates the last input type for use throughout the game.
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton or event is InputEventMouseMotion or event is InputEventKey:
+		if _last_input_type != LastInput.KEYBOARD_AND_MOUSE:
+			input_method_changed.emit(LastInput.KEYBOARD_AND_MOUSE)
 		_last_input_type = LastInput.KEYBOARD_AND_MOUSE
 	elif event is InputEventJoypadButton or event is InputEventJoypadMotion:
+		if _last_input_type != LastInput.GAMEPAD:
+			input_method_changed.emit(LastInput.GAMEPAD)
 		_last_input_type = LastInput.GAMEPAD
 
 
