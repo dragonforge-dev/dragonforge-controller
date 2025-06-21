@@ -2,6 +2,7 @@ extends Node
 
 ## Signal that there is a request to load the default keybindings shipped
 ## with the game. (I.E. what was set in the Godot Editor.)
+## Calls Controller._on_restore_default_keybindings() which will reset all keybindings to default.
 signal restore_default_keybindings
 ## Signal to tell the action display to show up and what to show.
 ## (For example, the hint to press a key to skip a dialog, tutorial info,
