@@ -24,12 +24,39 @@ Supports:
 - Keyboard (English Only)
 - Mouse
 
-## Get Last Input Type and Getting an Action Icon
+# Usage
+
+## Controller
+#### Signals
+- `restore_default_keybindings` Signal that there is a request to load the default keybindings shipped with the game. (I.E. what was set in the Godot Editor.) Calls `Controller._on_restore_default_keybindings()` which will reset all keybindings to default.
+- `show_action_display(action_name: String, action_text: String)` Signal to tell the action display to show up and what to show. (For example, the hint to press a key to skip a dialog, tutorial info, or the info on how to enter a building.) Action display must be implemented separately. (For an example see [dragonforge-game-template](https://github.com/dragonforge-dev/dragonforge-game-template).)
+- `hide_action_display` Signal to stop showing the action display.
+- `input_method_changed(last_input_type: LastInput)` Allows anything listening (like UI) to know when the input method being used changed for something new. Primarily for changing what interaction hints and control icons are shown on screen.
+
+#### Enums
+```
+enum LastInput {
+	KEYBOARD_AND_MOUSE,
+	GAMEPAD
+}
+```
+Enumerates the kinds of inputs that are possible.
+
+#### Public Variables
+`look: Vector2` Stores the amount of movement in the x/y direction that the player is trying to look in a 3D game. (See dragonforge-character-3d for usage example.)
+
+#### Public Functions
+- `get_last_input_type() -> LastInput` Returns the last input type used by the player.
+- `get_action_icon(action_name: String, input_type: LastInput = _last_input_type) -> Texture2D` Returns the correct Texture2D representation of the action passed based on the last input type used by the player - which can be specified. (Useful when the type changes and you want to update the UI immediately - resovles race conditions.)
+- `rebind_action(action: String, event: InputEvent) -> void` Sets the passed event for the given action in the InputMap and saves it to disk for loading the next time the game is loaded.
+- `event_to_string(event: InputEvent) -> String` Returns a string representation of the passed InputEvent. Returns a string of "Unknown" if the InputEvent was not listed here.
+
+### Get Last Input Type and Getting an Action Icon
 The function `Controller.get_last_input_type()` can be used to get whether the last input recevied from the player was of type `Controller.LastInput.KEYBOARD_AND_MOUSE` or `Controller.LastInput.GAMEPAD`. This can be used in gameplay where needed. However the real benefit is in retrieving UI icons.
 
 Let's say you have an "interact" action defined. When you call `Controller.get_action_icon("interact")` you will receive a **Textrure2D** you can assign to a TextureRect and the UI will tell the player what the interact button is based on whther they last moved the mouse or gamepad joystick, and will returtn it based on the device they have plugged in. (They'll get an Xbox button for example if they are using an XBox controller.)
 
-## Controller.look
+### Controller.look
 The `Controller.look` value stores the information needed to implement a camera 3D look either for an FPS or a 3D free look camera. **Controller** handles making sure that the input is based on whichever controls the player is currently using, and makes both smoothly function. This allows a developer to support both without having to do any additional work. For implementation details, check out **Dragonforge Character** which implements this through the **CameraMount** class.
 
 #To Do
