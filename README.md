@@ -1,3 +1,4 @@
+[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.4.1.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
 # Dragonforge Controller
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
 # Version 0.11
