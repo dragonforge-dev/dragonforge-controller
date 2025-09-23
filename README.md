@@ -1,8 +1,8 @@
-[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.rc2-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
 # Dragonforge Controller
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
 # Version 0.12
-For use with **Godot 4.5.rc2** and later.
+For use with **Godot 4.5.stable** and later.
 # Installation Instructions
 1. Copy the `dragonforge_controller` folder from the `addons` folder into your project's `addons` folder.
 2. Ignore the following errors (they are appearing because the component is not yet enabled):
