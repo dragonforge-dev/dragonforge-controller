@@ -1,5 +1,5 @@
 [![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
-# Dragonforge Controller
+# Dragonforge Controller <img src="/addons/dragonforge_controller/assets/textures/icons/device-controller.svg" width="32" alt="Controller Project Icon"/>
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
 # Version 0.12.1
 For use with **Godot 4.5.stable** and later.
@@ -35,7 +35,7 @@ Let's say you have an "interact" action defined. When you call `Controller.get_a
 The `Controller.look` value stores the information needed to implement a camera 3D look either for an FPS or a 3D free look camera. **Controller** handles making sure that the input is based on whichever controls the player is currently using, and makes both smoothly function. This allows a developer to support both without having to do any additional work. For implementation details, check out **Dragonforge Character** which implements this through the **CameraMount** class.
 
 # Class Descriptions
-## Controller (Autoload)
+## Controller (Autoload) <img src="/addons/dragonforge_controller/assets/textures/icons/generic_joystick_red_right.svg" width="32" alt="Controller Icon"/>
 This is the interface for the other classes. Typically you should not need to reference them directly.
 ### Signals
 - `restore_default_keybindings` Signal that there is a request to load the default keybindings shipped with the game. (I.E. what was set in the Godot Editor.) Calls `Controller._on_restore_default_keybindings()` which will reset all keybindings to default.
@@ -66,7 +66,7 @@ enum LastInput {
 - `event_to_string(event: InputEvent) -> String` Returns a string representation of the passed InputEvent. Returns a string of "Unknown" if the InputEvent was not listed here.
 
 
-## Keyboard (Autoload)
+## Keyboard (Autoload) <img src="/addons/dragonforge_controller/assets/textures/icons/keyboard.svg" width="32" alt="Keyboard Icon"/>
 
 ### Public Functions
 - `get_key_icon(event: InputEventKey) -> Texture2D` Returns the Texture2D representation of the keyboard key event passed
@@ -107,7 +107,7 @@ All of these are exported so that they can be replaced by custom images if you s
 - `get_gamepad_icon(action: InputEvent, device: int = 0) -> Texture2D`  Returns the Texture2D representation of the gamepad event passed, based on the type of gamepad the player is using. Returns null if the  InputEvent passed is not a Joypad event.
 
 
-## Mouse (Autoload)
+## Mouse (Autoload) <img src="/addons/dragonforge_controller/assets/textures/icons/mouse.svg" width="32" alt="Mouse Icon"/>
 ### Export Variables
 - `sensitivity: float = 0.0075` Look sensitivity modifier for 3D camera controls
 - `mouse_button_images: Array[Texture2D]` Stores mouse button icons based on the list above.
