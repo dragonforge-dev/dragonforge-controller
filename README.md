@@ -1,4 +1,8 @@
 [![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+[![License](https://img.shields.io/github/license/dragonforge-dev/dragonforge-controller?logo=mit)](https://github.com/dragonforge-dev/dragonforge-controller/blob/main/LICENSE)
+[![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-controller/latest)](https://github.com/dragonforge-dev/dragonforge-controller/releases/latest)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-controller)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-controller)
+
 # Dragonforge Controller <img src="/addons/dragonforge_controller/assets/textures/icons/device-controller.svg" width="32" alt="Controller Project Icon"/>
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
 # Version 0.12.1
