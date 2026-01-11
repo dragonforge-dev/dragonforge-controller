@@ -5,8 +5,11 @@
 
 # Dragonforge Controller <img src="/addons/dragonforge_controller/assets/textures/icons/device-controller.svg" width="32" alt="Controller Project Icon"/>
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
-# Version 0.12.1
+# Version 0.13
 For use with **Godot 4.5.stable** and later.
+## Dependencies
+The following dependencies are included in the addons folder and are required for the template to function.
+- [Dragonforge User Interface 0.1.3](https://github.com/dragonforge-dev/dragonforge-user-interface)
 # Installation Instructions
 1. Copy the `dragonforge_controller` folder from the `addons` folder into your project's `addons` folder.
 2. Ignore the following errors (they are appearing because the component is not yet enabled):
@@ -14,10 +17,12 @@ For use with **Godot 4.5.stable** and later.
   * ERROR: res://addons/dragonforge_controller/controller.gd:56 - Parse Error: Identifier "Mouse" not declared in the current scope.
   * ERROR: res://addons/dragonforge_controller/controller.gd:59 - Parse Error: Identifier "Gamepad" not declared in the current scope.
   * ERROR: modules/gdscript/gdscript.cpp:3022 - Failed to load script "res://addons/dragonforge_controller/controller.gd" with error "Parse error".
-3. In your project go to **Project -> Project Settings...**
-4. Select the **plugins** tab.
-5. Check the **On checkbox** under **Enabled** for **Dragonforge Controller**
-6. Press the **Close** button.
+3. If it does not exist already, copy the `dragonforge_user_interface` folder from the `addons` folder into your project's `addons` folder.
+4. In your project go to **Project -> Project Settings...**
+5. Select the **plugins** tab.
+6. Check the **On checkbox** under **Enabled** for **Dragonforge Controller**
+7. Check the **On checkbox** under **Enabled** for **Dragonforge User Interface**.
+8. Press the **Close** button.
 
 Four autoloads will be added. If you would like to ensure the errors are gone, go to **Project -> Reload Project**. When the project reloads, the previous errors should no longer appear. (We cannot guarantee your own errors will not still appear.)
 
@@ -119,5 +124,20 @@ All of these are exported so that they can be replaced by custom images if you s
 ### Public Functions
 - `get_mouse_icon(action: InputEvent) -> Texture2D` Returns the Texture2D representation of the mouse button event passed. Returns null if the InputEvent is not a MouseButtonEvent.
 
-#To Do
-- Add in detection of Steam Deck and add button icons
+# Localization
+This project's UI has been created to work with localization. You can easily use localization by using the [Dragonforge Localization](https://github.com/dragonforge-dev/dragonforge-localization) plugin. The following labels exist and should be given translations:
+
+- ACTION
+- KEYBOARD
+- MOUSE
+- BACK
+- RESET
+
+There are also default actions that show up in the Key Map screen. They are:
+- MOVE_UP
+- MOVE_DOWN
+- MOVE_LEFT
+- MOVE_RIGHT
+- INTERACT
+
+These can be changed, rmeoved and added to inside the **Controller** Autoload scene located at `res://addons/dragonforge_controller/controller.tscn`.
