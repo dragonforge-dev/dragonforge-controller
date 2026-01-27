@@ -1,15 +1,15 @@
-[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.5.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
 [![License](https://img.shields.io/github/license/dragonforge-dev/dragonforge-controller?logo=mit)](https://github.com/dragonforge-dev/dragonforge-controller/blob/main/LICENSE)
 [![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-controller/stable)](https://github.com/dragonforge-dev/dragonforge-controller/releases/latest)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-controller)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-controller)
 
 # Dragonforge Controller <img src="/addons/dragonforge_controller/assets/textures/icons/device-controller.svg" width="32" alt="Controller Project Icon"/>
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
-# Version 0.13
-For use with **Godot 4.5.stable** and later.
+# Version 0.14
+For use with **Godot 4.6.stable** and later.
 ## Dependencies
 The following dependencies are included in the addons folder and are required for the template to function.
-- [Dragonforge User Interface 0.1.3](https://github.com/dragonforge-dev/dragonforge-user-interface)
+- [Dragonforge User Interface 0.2](https://github.com/dragonforge-dev/dragonforge-user-interface)
 # Installation Instructions
 1. Copy the `dragonforge_controller` folder from the `addons` folder into your project's `addons` folder.
 2. Ignore the following errors (they are appearing because the component is not yet enabled):
