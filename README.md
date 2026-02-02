@@ -12,11 +12,7 @@ The following dependencies are included in the addons folder and are required fo
 - [Dragonforge User Interface 0.2.1](https://github.com/dragonforge-dev/dragonforge-user-interface)
 # Installation Instructions
 1. Copy the `dragonforge_controller` folder from the `addons` folder into your project's `addons` folder.
-2. Ignore the following errors (they are appearing because the component is not yet enabled):
-  * ERROR: res://addons/dragonforge_controller/controller.gd:54 - Parse Error: Identifier "Keyboard" not declared in the current scope.
-  * ERROR: res://addons/dragonforge_controller/controller.gd:56 - Parse Error: Identifier "Mouse" not declared in the current scope.
-  * ERROR: res://addons/dragonforge_controller/controller.gd:59 - Parse Error: Identifier "Gamepad" not declared in the current scope.
-  * ERROR: modules/gdscript/gdscript.cpp:3022 - Failed to load script "res://addons/dragonforge_controller/controller.gd" with error "Parse error".
+2. Ignore the following errors that pop up (they are appearing because the component is not yet enabled):
 3. If it does not exist already, copy the `dragonforge_user_interface` folder from the `addons` folder into your project's `addons` folder.
 4. In your project go to **Project -> Project Settings...**
 5. Select the **plugins** tab.
