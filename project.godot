@@ -14,9 +14,9 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Dragonforge Controller v0.14"
+config/name="Dragonforge Controller v0.14.1"
 config/description="A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse."
-config/version="0.14"
+config/version="0.14.1"
 run/main_scene="uid://c6r3mjmkbem06"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://chuxl7r1v2dfg"
