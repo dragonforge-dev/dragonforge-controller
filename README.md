@@ -13,12 +13,10 @@ The following optional dependencies are included in the addons folder and are re
 # Installation Instructions
 1. Copy the `dragonforge_controller` folder from the `addons` folder into your project's `addons` folder.
 2. Ignore any errors (they are appearing because the component is not yet enabled.)
-3. If it does not exist already, copy the `dragonforge_user_interface` folder from the `addons` folder into your project's `addons` folder.
-4. In your project go to **Project -> Project Settings...**
-5. Select the **plugins** tab.
-6. Check the **On checkbox** under **Enabled** for **Dragonforge Controller**
-7. Check the **On checkbox** under **Enabled** for **Dragonforge User Interface**.
-8. Press the **Close** button.
+3. In your project go to **Project -> Project Settings...**
+4. Select the **plugins** tab.
+5. Check the **On checkbox** under **Enabled** for **Dragonforge Controller**
+6. Press the **Close** button.
 
 Four autoloads will be added. If you would like to ensure the errors are gone, go to **Project -> Reload Project**. When the project reloads, the previous errors should no longer appear. (We cannot guarantee your own errors will not still appear.)
 
