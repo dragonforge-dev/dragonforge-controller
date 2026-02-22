@@ -128,6 +128,10 @@ This project's UI has been created to work with localization. You can easily use
 - MOUSE
 - BACK
 - RESET
+- GAMEPLAY_SETTINGS
+- MOUSE_LOOK_SENSITIVITY
+- GAMEPAD_X_LOOK_SENSITIVITY
+- GAMEPAD_Y_LOOK_SENSITIVITY
 
 There are also default actions that show up in the Key Map screen. They are:
 - MOVE_UP
