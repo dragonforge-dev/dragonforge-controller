@@ -1,4 +1,4 @@
-[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
+[![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.1-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
 [![License](https://img.shields.io/github/license/dragonforge-dev/dragonforge-controller?logo=mit)](https://github.com/dragonforge-dev/dragonforge-controller/blob/main/LICENSE)
 [![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-controller/stable)](https://github.com/dragonforge-dev/dragonforge-controller/releases/latest)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-controller)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-controller)
@@ -6,19 +6,17 @@
 # Dragonforge Controller <img src="/addons/dragonforge_controller/assets/textures/icons/device-controller.svg" width="32" alt="Controller Project Icon"/>
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
 # Version 0.14.4
-For use with **Godot 4.6.stable** and later.
+For use with **Godot 4.6.1** and later.
 ## Dependencies
 The following optional dependencies are included in the addons folder and are required for the template to function. (See [UI Installation Instructions](#ui-installation-instructions))
 - [Dragonforge User Interface 0.2.1](https://github.com/dragonforge-dev/dragonforge-user-interface)
 # Installation Instructions
 1. Copy the `dragonforge_controller` folder from the `addons` folder into your project's `addons` folder.
 2. Ignore any errors (they are appearing because the component is not yet enabled.)
-3. If it does not exist already, copy the `dragonforge_user_interface` folder from the `addons` folder into your project's `addons` folder.
-4. In your project go to **Project -> Project Settings...**
-5. Select the **plugins** tab.
-6. Check the **On checkbox** under **Enabled** for **Dragonforge Controller**
-7. Check the **On checkbox** under **Enabled** for **Dragonforge User Interface**.
-8. Press the **Close** button.
+3. In your project go to **Project -> Project Settings...**
+4. Select the **plugins** tab.
+5. Check the **On checkbox** under **Enabled** for **Dragonforge Controller**
+6. Press the **Close** button.
 
 Four autoloads will be added. If you would like to ensure the errors are gone, go to **Project -> Reload Project**. When the project reloads, the previous errors should no longer appear. (We cannot guarantee your own errors will not still appear.)
 
@@ -143,6 +141,7 @@ This project's UI has been created to work with localization. You can easily use
 - GAMEPAD_X_LOOK_SENSITIVITY
 - GAMEPAD_Y_LOOK_SENSITIVITY
 
+## Default Action Names
 There are also default actions that show up in the Key Map screen. They are:
 - MOVE_UP
 - MOVE_DOWN
@@ -150,4 +149,4 @@ There are also default actions that show up in the Key Map screen. They are:
 - MOVE_RIGHT
 - INTERACT
 
-These can be changed, rmeoved and added to inside the **Controller** Autoload scene located at `res://addons/dragonforge_controller/controller.tscn`.
+These can be changed, removed, and added to inside the **Controller** Autoload scene located at `res://addons/dragonforge_controller/controller.tscn`.
