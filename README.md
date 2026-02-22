@@ -141,6 +141,7 @@ This project's UI has been created to work with localization. You can easily use
 - GAMEPAD_X_LOOK_SENSITIVITY
 - GAMEPAD_Y_LOOK_SENSITIVITY
 
+## Default Action Names
 There are also default actions that show up in the Key Map screen. They are:
 - MOVE_UP
 - MOVE_DOWN
@@ -148,4 +149,4 @@ There are also default actions that show up in the Key Map screen. They are:
 - MOVE_RIGHT
 - INTERACT
 
-These can be changed, rmeoved and added to inside the **Controller** Autoload scene located at `res://addons/dragonforge_controller/controller.tscn`.
+These can be changed, removed, and added to inside the **Controller** Autoload scene located at `res://addons/dragonforge_controller/controller.tscn`.
