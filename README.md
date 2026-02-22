@@ -5,10 +5,10 @@
 
 # Dragonforge Controller <img src="/addons/dragonforge_controller/assets/textures/icons/device-controller.svg" width="32" alt="Controller Project Icon"/>
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
-# Version 0.14.3
+# Version 0.14.4
 For use with **Godot 4.6.stable** and later.
 ## Dependencies
-The following dependencies are included in the addons folder and are required for the template to function.
+The following optional dependencies are included in the addons folder and are required for the template to function. (See [UI Installation Instructions](#ui-installation-instructions))
 - [Dragonforge User Interface 0.2.1](https://github.com/dragonforge-dev/dragonforge-user-interface)
 # Installation Instructions
 1. Copy the `dragonforge_controller` folder from the `addons` folder into your project's `addons` folder.
@@ -21,6 +21,16 @@ The following dependencies are included in the addons folder and are required fo
 8. Press the **Close** button.
 
 Four autoloads will be added. If you would like to ensure the errors are gone, go to **Project -> Reload Project**. When the project reloads, the previous errors should no longer appear. (We cannot guarantee your own errors will not still appear.)
+
+# UI Installation Instructions
+You only need to do this if you want to use the provided Key Reampping and Look Sensitivity UI screens.
+1. Copy the `dragonforge_controller_ui` folder from the `addons` folder into your project's `addons` folder.
+2. If it does not exist already, copy the `dragonforge_user_interface` folder from the `addons` folder into your project's `addons` folder.
+4. In your project go to **Project -> Project Settings...**
+5. Select the **plugins** tab.
+6. Check the **On checkbox** under **Enabled** for **Dragonforge User Interface**.
+7. Press the **Close** button.
+
 
 # Usage Instructions
 The primary purpose of this plugin is to track inputs, store icons for all actions, make it easy to pull up the correct icon for any action, and to allow players to customize and save keybindings. For implementation details, see the Dragonforge Game Template.

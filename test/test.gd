@@ -4,5 +4,5 @@ extends Control
 @onready var game_play: Screen = $GamePlay
 
 func _ready() -> void:
-	controls.show()
-	#game_play.show()
+	#controls.show()
+	game_play.show()

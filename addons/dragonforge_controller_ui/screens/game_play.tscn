@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dd2k76ahtafiv"]
 
 [ext_resource type="Script" uid="uid://cprxft1lx8m4j" path="res://addons/dragonforge_user_interface/ui/screens/screen.gd" id="1_p1ojr"]
-[ext_resource type="Script" uid="uid://brorrkk2k5lps" path="res://addons/dragonforge_controller/ui/containers/look_sensitivity_container.gd" id="2_p1ypf"]
+[ext_resource type="Script" uid="uid://brorrkk2k5lps" path="res://addons/dragonforge_controller_ui/containers/look_sensitivity_container.gd" id="2_p1ypf"]
 
 [node name="GamePlay" type="Control" unique_id=334598977]
 layout_mode = 3

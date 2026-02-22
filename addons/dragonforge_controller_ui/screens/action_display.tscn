@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dw00qvyib81gf"]
+[gd_scene format=3 uid="uid://dw00qvyib81gf"]
 
 [ext_resource type="Texture2D" uid="uid://pk6u7je37xyu" path="res://addons/dragonforge_controller/assets/controller_buttons/xbox/xbox_button_color_b.svg" id="1_p1ije"]
-[ext_resource type="Script" uid="uid://dt84iptuy3fbr" path="res://addons/dragonforge_game_template/ui/screens/action_display.gd" id="1_tblkm"]
+[ext_resource type="Script" path="res://addons/dragonforge_game_template/ui/screens/action_display.gd" id="1_tblkm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4lsvo"]
 font_size = 36
