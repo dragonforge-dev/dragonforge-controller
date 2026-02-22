@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ugocdhp6uxys" path="res://test/test.gd" id="1_8a8pi"]
 [ext_resource type="PackedScene" uid="uid://dqfau8pvhksue" path="res://addons/dragonforge_controller/ui/screens/controls.tscn" id="2_65205"]
+[ext_resource type="PackedScene" uid="uid://dd2k76ahtafiv" path="res://addons/dragonforge_controller/ui/screens/game_play.tscn" id="3_65205"]
 
 [node name="Test" type="Control" unique_id=1063291791]
 layout_mode = 3
@@ -13,4 +14,8 @@ grow_vertical = 2
 script = ExtResource("1_8a8pi")
 
 [node name="Controls" parent="." unique_id=245048302 instance=ExtResource("2_65205")]
+layout_mode = 1
+
+[node name="GamePlay" parent="." unique_id=334598977 instance=ExtResource("3_65205")]
+visible = false
 layout_mode = 1
