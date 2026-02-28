@@ -5,7 +5,7 @@
 
 # Dragonforge Controller <img src="/addons/dragonforge_controller/assets/textures/icons/device-controller.svg" width="32" alt="Controller Project Icon"/>
 A controller autoload singleton to handle game input from gamepads (controllers) and keyboard/mouse.
-# Version 0.14.5
+# Version 0.14.6
 For use with **Godot 4.6.1** and later.
 ## Dependencies
 The following optional dependencies are included in the addons folder and are required for the template to function. (See [UI Installation Instructions](#ui-installation-instructions))
