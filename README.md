@@ -42,7 +42,7 @@ Supports:
 ## Get Last Input Type and Getting an Action Icon
 The function `Controller.get_last_input_type()` can be used to get whether the last input recevied from the player was of type `Controller.LastInput.KEYBOARD_AND_MOUSE` or `Controller.LastInput.GAMEPAD`. This can be used in gameplay where needed. However the real benefit is in retrieving UI icons.
 
-Let's say you have an "interact" action defined. When you call `Controller.get_action_icon("interact")` you will receive a **Textrure2D** you can assign to a TextureRect and the UI will tell the player what the interact button is based on whther they last moved the mouse or gamepad joystick, and will return it based on the device they are currently using. (They'll get an Xbox button for example if they are using an XBox controller, or a keyboard key if they're using keyboard and mouse.)
+Let's say you have an "interact" action defined. When you call `Controller.get_action_icon("interact")` you will receive a **Texture2D** you can assign to a **TextureRect** and the UI will tell the player what the interact button is based on whether they last moved the mouse or gamepad joystick, and will return it based on the device they are currently using. (They'll get an Xbox button for example if they are using an XBox controller, or a keyboard key if they're using keyboard and mouse.)
 
 You can connect to the `Controller.input_method_changed` signal to update your UI immediately if the player switches devices.
 
